@@ -1,5 +1,49 @@
 # Changelog
 
+## 2026-11-17 — Motorsport & car badges (51 designs)
+
+New collection `motorsport` ("Motorsport & car badges") — 51 one-colour racing
+and car marques as white glyphs on dark tiles. It sits between Football clubs
+and Tech & dev marks on the hub and uses the dense auto-fill grid (same as the
+tech marks), with no role chips and no QWER set bar.
+
+| Group | Marks |
+|---|---|
+| Formula 1 & motorsport (10) | Ferrari, McLaren, Red Bull, Aston Martin, Mercedes-Benz, Audi, Cadillac, Alpine, Haas F1, Formula 1 |
+| Europe (18) | BMW, MINI, Porsche, Volkswagen, Lamborghini, Bugatti, Bentley, Rolls-Royce, Maserati, Fiat, Peugeot, Citroen, Renault, Skoda, Opel, Land Rover, Volvo, Polestar |
+| America (5) | Tesla, Ford, Chevrolet, Jeep, Chrysler |
+| Japan (8) | Toyota, Honda, Nissan, Infiniti, Lexus, Subaru, Mitsubishi, Suzuki |
+| Rest of Asia (5) | Hyundai, Kia, MG, Proton, Acura |
+| Motorcycles (4) | Ducati, KTM, Yamaha, Husqvarna |
+| Motorsport kit (1) | Shell |
+
+Sources: 45 marks from simple-icons (official 24x24 single-path SVGs, same
+pipeline as the tech collection) plus 6 from Wikimedia Commons for the brands
+simple-icons no longer carries — Mercedes-Benz, Lexus, Land Rover, Yamaha, Haas
+and Alpine. The Mercedes star is pulled from the SVG's alpha channel (its
+2022 artwork is a gradient, so a luminance threshold only produced the outline),
+the Yamaha lockup is rendered from its embedded raster at 1:1, and the Alpine
+lockup is cropped just above the tricolour bars.
+
+Left out on purpose: Dacia and SEAT (solid square badges that read as white
+blocks at keycap size), Mazda and Lucid (very heavy wordmarks), Mercedes-AMG
+(a 9.5:1 wordmark that is illegible on a key), and Williams, Dodge, Aprilia,
+Alfa Romeo, Jaguar, Kawasaki and BYD (no usable single-colour source).
+
+### Files
+| File | Status | Notes |
+|---|---|---|
+| `resin/logos.js` | modified | New `motorsport` collection (51 designs, all `tile: "dark"`) after Football, before Tech & dev marks. |
+| `resin/logos/*.webp` | new | 51 assets: white on transparent, trimmed, 1px safe border, 256px longest side, WebP q92 (1.2–13.7 KB each, 282 KB total). |
+
+### Notes
+- Re-running **Import bundled logos** from `admin-catalog.html` adds the
+  collection and its 51 rows to Supabase.
+- Brand logos are trademarks of their owners; they are used here as product
+  artwork, not as an endorsement.
+- No `role` values, so `store.js` keeps the role filters and QWER builder off
+  for this collection automatically.
+
 ## 2026-11-16 — Tech & dev marks (98 designs)
 
 New collection `tech-marks` ("Tech & dev marks") — 98 one-colour developer
