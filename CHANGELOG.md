@@ -1,5 +1,30 @@
 # Changelog
 
+## 2026-11-18 — Naruto series rebuilt from the exact reference sheets
+
+The previous two-design attempt was rejected. The Naruto series is now built
+from the user's exact references:
+
+| Designs | Reference | Motif |
+|---|---|---|
+| `naruto-village-01` … `naruto-village-15` | Dreamstime "Collection of tattoo stickers … all naruto village symbols" | The **15 village emblems** traced from the high-res 5×3 sheet, each redrawn as a bold white mark with a black keyline so it reads on a dark keycap tile. |
+| `naruto-akatsuki-cloud` | Pinterest red-cloud reference | The plain **Akatsuki red cloud** (Wikimedia Commons vector, black outline). |
+| `naruto-akatsuki-crossed` | Shutterstock "Akatsuki symbol crossed ninja village logos" + attached image | Red cloud carrying crossed-out village emblems, matching the attached reference. |
+
+The collection stays named **Anime** with internal ID `sharingan`. It now has
+**57 designs** (40 dojutsu discs + 17 Naruto designs). The two rejected WebPs
+and catalog entries are removed; the 40 eye designs are unchanged.
+
+| File | Status | Notes |
+|---|---|---|
+| `resin/logos.js` | modified | Naruto series replaced with 15 village emblems + 2 Akatsuki designs (57 total). |
+| `resin/logos/*.webp` | replaced | 17 new 256px transparent WebPs (~110 KB total); 2 rejected WebPs deleted. |
+| `CHANGELOG.md` | modified | This entry. |
+
+### Notes
+- Full-colour artwork still needs a printed/UV transfer route, not the current
+  single-colour white-ink resin process.
+
 ## 2026-11-18 — Naruto series rebuilt from the two reference images
 
 The six original Naruto symbol emblems were rejected, so they are removed and
