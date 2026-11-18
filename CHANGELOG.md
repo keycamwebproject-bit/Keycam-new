@@ -1,5 +1,42 @@
 # Changelog
 
+## 2026-11-18 — Sharingan & Rinnegan (40 designs)
+
+First entry of the Anime group. New collection `sharingan` ("Sharingan &
+Rinnegan") — 40 full-colour dojutsu marks, with the Sharingan family kept in
+canonical red and the Rinnegan family in violet. It sits between Tech & dev marks
+and Your own logo on the hub and uses the dense auto-fill grid, with no role
+chips and no QWER set bar. Every tile is `dark` so the coloured irises stay vivid.
+
+| Group | Marks |
+|---|---|
+| Base states (7) | 1-, 2-, 3- and 4-tomoe Sharingan, Mangekyo, Rinnegan, Rinne-Sharingan |
+| Uchiha & early users (11) | Indra, Madara (+ Mangekyo, Eternal Mangekyo, Rinnegan), Izuna, Fugaku, Mikoto, Itachi (+ Mangekyo), Shisui (+ Mangekyo) |
+| Obito & Kakashi (6) | Obito (+ Kamui, Rinnegan), Kakashi (+ Sharingan, Kamui, Rinnegan) |
+| Sasuke (5) | Sasuke (+ Amaterasu, Mangekyo, Eternal Mangekyo, Rinnegan) |
+| Later users (5) | Danzo (+ stolen Shisui eye), Sarada, Shin, Uchiha Clan |
+| Rinnegan / Otsutsuki (6) | Hagoromo, Nagato / Pain, Kaguya, Momoshiki, Urashiki, plus the base Rinnegan above |
+
+Artwork is original geometric vector work built in this repo (almond eye,
+tomoe commas, Mangekyo blades/arms, Rinnegan ripple rings) — no official artwork
+was traced or downloaded. Small identifiers such as Kakashi's headband, Obito's
+scar and Danzo's extra eyes are part of the vector, not sourced images.
+
+### Files
+| File | Status | Notes |
+|---|---|---|
+| `resin/logos.js` | modified | New `sharingan` collection (40 designs, all `tile: "dark"`) after Tech & dev marks. |
+| `resin/logos/*.webp` | new | 40 full-colour WebPs, transparent, trimmed, 1px safe border, 256px longest side, q92 (5.4–9.8 KB each, 259 KB total). |
+
+### Notes
+- **Production caveat:** these are the first non-white assets in the catalog.
+  The current resin process prints one colour of ink; full-colour eyes need a
+  printed/UV transfer or a different production route. Keep them marked as
+  full-colour in the product description rather than promising white-ink resin.
+- Kaguya, Momoshiki and Urashiki are included as Rinnegan-eyed Ōtsutsuki for
+  coverage; their eye patterns are stylised interpretations, not frame-accurate.
+- No `role` values, so `store.js` keeps the role filters and QWER builder off.
+
 ## 2026-11-17 — Motorsport & car badges (51 designs)
 
 New collection `motorsport` ("Motorsport & car badges") — 51 one-colour racing
