@@ -1,5 +1,69 @@
 # Changelog
 
+## 2026-11-18 — Sharingan artwork rebuilt from Commons SVGs
+
+Replaces the 40 full-colour almond-eye icons shipped earlier in the `sharingan`
+collection (the entry below describes that superseded set). Every image is now a
+**square, circular dojutsu disc** with a dark radial-gradient iris, black outlines
+and black tomoe/blade paths, so it fills the keycap the way the reference does.
+No white sclera remains anywhere in the set.
+
+Artwork comes from the Wikimedia Commons `Category:Sharingan` SVG family — the
+same style as `Mangekyou Sharingan Sasuke (Eternal).svg`: a 300×300 radial
+gradient (`#660000` → `#c30000` → `#a00000`) inside a black stroke, with the
+character-specific black pattern on top. Per-character files are used wherever
+Commons has one (Indra, Madara + Eternal, Izuna, Itachi, Shisui, Kakashi, Sasuke
++ Eternal, Sarada, Shin, base 1/2/3-tomoe, Rinne-Sharingan, Kaguya). Characters
+without a dedicated file use the base 3-tomoe or Kamui pattern. Only gradient
+colours were changed: Sharingan stay red, Rinnegan are violet, and the black
+linework is untouched. The 4-tomoe and violet Ripple/Rinnegan marks are built
+from the same Commons tomoe and gradient geometry.
+
+All 40 design IDs and names are unchanged, so `resin/logos.js`, the Supabase rows
+and the image URLs stay the same. Only the WebP files were swapped.
+
+| File | Status | Notes |
+|---|---|---|
+| `resin/logos/*.webp` | replaced | 40 circular discs, 256×256, transparent, 1px border, q92 (6.0–12.5 KB each, 350 KB total). |
+| `resin/logos.js` | unchanged | Same 40 IDs, names, dark tiles and ordering. |
+| `CHANGELOG.md` | modified | This entry. |
+
+### Notes
+- Verified locally and live: 40 designs, dense grid, no role chips, no QWER bar,
+  red/violet pixels present, **zero white pixels** in all 40 assets.
+- Still a production caveat: full-colour artwork needs a printed/UV transfer,
+  not the current single-colour white-ink resin process.
+
+## 2026-11-18 — Catalog admin redesign
+
+`admin-catalog.html` now runs on one shared stylesheet instead of a page-level
+`<style>` block. Same dark PCB/datasheet look, tightened: fixed sidebar plus a
+sticky topbar whose title follows the active tab, KPIs before orders on
+Overview, and the festival discount demoted into a disclosure card.
+
+Products table rows dropped from ~120px to 53px: eight per-row buttons became
+**Save** plus a single **Manage ▾** popover, and Save stays muted until the row
+is edited. Row menus use fixed positioning so they escape the table scroller,
+flipping up or clamping near the viewport edge. Tables scroll inside their card
+between 701–1180px; below 700px the sidebar becomes a top strip.
+
+Accessibility went from 0.85 to 1.00 (Lighthouse accessibility, best practices
+and SEO all 1.00): column `scope`, screen-reader names for empty columns, labels
+on every live table input, labelled login fields, a `main` landmark and a meta
+description.
+
+| File | Status | Notes |
+|---|---|---|
+| `shared/admin.css` | rewritten | Admin design system: tokens, shell, topbar, KPIs, forms, tables, badges, disclosures, uploads, modals, responsive and reduced-motion rules. |
+| `admin-catalog.html` | modified | Links `shared/admin.css`, new shell markup, tab titles in `switchTab`, merged Manage menu, dirty-row state, a11y fixes. |
+| `.opencode/skills/ui-ux/SKILL.md` | new | Reusable UI/UX workflow and repo constraints. |
+| `.opencode/skills/ui-ux/references/admin-audit.md` | new | Admin inventory, preserved behaviour and remaining debt. |
+
+### Notes
+- All element IDs, `data-tab` values, JS hooks and Supabase calls are unchanged.
+- `deskmat/admin.html` still uses its old inline styles; adopting the shared
+  sheet there is the next step.
+
 ## 2026-11-18 — Sharingan & Rinnegan (40 designs)
 
 First entry of the Anime group. New collection `sharingan` ("Sharingan &
