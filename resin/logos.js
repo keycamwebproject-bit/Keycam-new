@@ -8,7 +8,8 @@
    A design belongs to one collection. `tile` is "light" | "dark" — copied
    from the printed catalog (white logos sit on a dark tile). The custom
    collection has no designs; the builder shows only the "Your own logo"
-   tile for it.
+   tile for it. Naruto emblem art uses clean traced masks with transparent
+   backgrounds.
 ========================= */
 
 window.RESIN_COLLECTIONS = [
