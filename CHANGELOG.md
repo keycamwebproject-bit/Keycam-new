@@ -1,5 +1,37 @@
 # Changelog
 
+## 2026-11-18 — Anime collection: Naruto symbol series (6 designs)
+
+The single anime collection is now named **Anime** on the hub and collection
+page. Its internal ID stays `sharingan`, so existing links, image URLs and
+Supabase rows keep working — no migration needed.
+
+First franchise series is **Naruto**: six signature symbols, drawn as original
+bold vector emblems with black outlines and a limited full-colour palette. They
+sit after the 40 dojutsu discs and are named with a `Naruto ·` prefix so the
+series groups together in the dense grid.
+
+| Design | Motif |
+|---|---|
+| `naruto-leaf` | Leaf Village spiral with leaf tip |
+| `naruto-akatsuki` | Akatsuki cloud |
+| `naruto-rasengan` | Blue spinning Rasengan |
+| `naruto-kurama` | Nine-tailed fox face and tails |
+| `naruto-headband` | Forehead protector with engraved leaf |
+| `naruto-kunai` | Ninja kunai with red-wrapped handle |
+
+| File | Status | Notes |
+|---|---|---|
+| `resin/logos.js` | modified | Collection renamed to Anime; 6 new dark-tile designs appended (46 total). |
+| `resin/logos/*.webp` | new | 6 full-colour 256px WebPs, transparent, 1px border, q92 (37.8 KB total). |
+| `CHANGELOG.md` | modified | This entry. |
+
+### Notes
+- Franchise series will be appended to this same collection (no extra hub
+  cards). Next candidates: One Piece, Demon Slayer, Attack on Titan.
+- Full-colour artwork still needs a printed/UV transfer route, not the current
+  single-colour white-ink resin process.
+
 ## 2026-11-18 — Sharingan artwork rebuilt from Commons SVGs
 
 Replaces the 40 full-colour almond-eye icons shipped earlier in the `sharingan`

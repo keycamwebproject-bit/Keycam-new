@@ -416,11 +416,11 @@ window.RESIN_COLLECTIONS = [
   },
   {
     id: "sharingan",
-    name: "Sharingan & Rinnegan",
-    short: "Naruto Eyes",
+    name: "Anime",
+    short: "Anime",
     region: "Naruto",
     group: "Anime",
-    blurb: "40 dojutsu marks in red and violet",
+    blurb: "Naruto eyes and signature symbols",
     designs: [
       { id: "sharingan-1",               name: "1-Tomoe Sharingan",           tile: "dark" },
       { id: "sharingan-2",               name: "2-Tomoe Sharingan",           tile: "dark" },
@@ -462,6 +462,12 @@ window.RESIN_COLLECTIONS = [
       { id: "kaguya",                    name: "Kaguya Otsutsuki",            tile: "dark" },
       { id: "momoshiki",                 name: "Momoshiki Otsutsuki",         tile: "dark" },
       { id: "urashiki",                  name: "Urashiki Otsutsuki",          tile: "dark" },
+      { id: "naruto-leaf",               name: "Naruto · Leaf Village",        tile: "dark" },
+      { id: "naruto-akatsuki",           name: "Naruto · Akatsuki Cloud",      tile: "dark" },
+      { id: "naruto-rasengan",           name: "Naruto · Rasengan",            tile: "dark" },
+      { id: "naruto-kurama",             name: "Naruto · Kurama",              tile: "dark" },
+      { id: "naruto-headband",           name: "Naruto · Forehead Protector",  tile: "dark" },
+      { id: "naruto-kunai",              name: "Naruto · Kunai",               tile: "dark" },
     ]
   },
   {
