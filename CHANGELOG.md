@@ -22,6 +22,8 @@ and catalog entries are removed; the 40 eye designs are unchanged.
 | `CHANGELOG.md` | modified | This entry. |
 
 ### Notes
+- Final pass removed sticker-sheet rule lines from the traced masks and fixed
+  alpha compositing so only the emblem shape is opaque.
 - Full-colour artwork still needs a printed/UV transfer route, not the current
   single-colour white-ink resin process.
 
