@@ -1,5 +1,30 @@
 # Changelog
 
+## 2026-11-18 — Naruto series rebuilt from the two reference images
+
+The six original Naruto symbol emblems were rejected, so they are removed and
+replaced by **two** designs built directly from the user's references:
+
+| Design | Reference | Motif |
+|---|---|---|
+| `naruto-village` | Dreamstime "All naruto village symbols" tattoo sticker sheet | Authentic Konoha leaf-village spiral from Wikimedia Commons `Konohagakure.svg`, redrawn as a bold red mark with a black outline. |
+| `naruto-akatsuki-slash` | Wallpaper Alchemy "Akatsuki Symbols Minimalist Dark" | Red Akatsuki cloud (`Akatsuki nuage.svg`) above a denim forehead protector whose engraved leaf plate is crossed out with a red slash. |
+
+The collection stays named **Anime** with internal ID `sharingan`. It now has
+**42 designs** (40 dojutsu discs + 2 Naruto symbols). The six rejected WebPs are
+deleted and their catalog entries removed; names/IDs of all 40 eye designs are
+unchanged.
+
+| File | Status | Notes |
+|---|---|---|
+| `resin/logos.js` | modified | Naruto series reduced from 6 to 2 reference-based designs (42 total). |
+| `resin/logos/*.webp` | replaced | 2 new 256px WebPs (17.9 KB total); 6 rejected WebPs deleted. |
+| `CHANGELOG.md` | modified | This entry. |
+
+### Notes
+- Full-colour artwork still needs a printed/UV transfer route, not the current
+  single-colour white-ink resin process.
+
 ## 2026-11-18 — Anime collection: Naruto symbol series (6 designs)
 
 The single anime collection is now named **Anime** on the hub and collection

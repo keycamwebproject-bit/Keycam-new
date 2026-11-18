@@ -420,7 +420,7 @@ window.RESIN_COLLECTIONS = [
     short: "Anime",
     region: "Naruto",
     group: "Anime",
-    blurb: "Naruto eyes and signature symbols",
+    blurb: "Naruto eyes and village symbols",
     designs: [
       { id: "sharingan-1",               name: "1-Tomoe Sharingan",           tile: "dark" },
       { id: "sharingan-2",               name: "2-Tomoe Sharingan",           tile: "dark" },
@@ -462,12 +462,8 @@ window.RESIN_COLLECTIONS = [
       { id: "kaguya",                    name: "Kaguya Otsutsuki",            tile: "dark" },
       { id: "momoshiki",                 name: "Momoshiki Otsutsuki",         tile: "dark" },
       { id: "urashiki",                  name: "Urashiki Otsutsuki",          tile: "dark" },
-      { id: "naruto-leaf",               name: "Naruto · Leaf Village",        tile: "dark" },
-      { id: "naruto-akatsuki",           name: "Naruto · Akatsuki Cloud",      tile: "dark" },
-      { id: "naruto-rasengan",           name: "Naruto · Rasengan",            tile: "dark" },
-      { id: "naruto-kurama",             name: "Naruto · Kurama",              tile: "dark" },
-      { id: "naruto-headband",           name: "Naruto · Forehead Protector",  tile: "dark" },
-      { id: "naruto-kunai",              name: "Naruto · Kunai",               tile: "dark" },
+      { id: "naruto-village",            name: "Naruto · Leaf Village Symbol",       tile: "dark" },
+      { id: "naruto-akatsuki-slash",     name: "Naruto · Akatsuki & Slashed Headband", tile: "dark" },
     ]
   },
   {
