@@ -209,12 +209,16 @@ window.RESIN_COLLECTIONS = [
     short: "Mobile Legends",
     region: "International",
     group: "Esports",
-    blurb: "4 team logos from outside Cambodia",
+    blurb: "8 team logos from outside Cambodia",
     designs: [
       { id: "blacklist",      name: "Blacklist International", tile: "light" },
       { id: "red-giants",     name: "Red Giants",              tile: "light" },
       { id: "ego",            name: "EGO",                     tile: "light" },
-      { id: "omega-esports",  name: "Omega Esports",           tile: "light" }
+      { id: "omega-esports",  name: "Omega Esports",           tile: "light" },
+      { id: "ap-bren",        name: "AP Bren",                 tile: "light" },
+      { id: "natus-vincere",  name: "Natus Vincere",           tile: "light" },
+      { id: "aurora-gaming",  name: "Aurora Gaming",           tile: "light" },
+      { id: "tnc-pro-team",   name: "TNC Pro Team",            tile: "light" }
     ]
   },
   {
@@ -488,7 +492,7 @@ window.RESIN_COLLECTIONS = [
     short: "Your own logo",
     group: "Custom",
     customOnly: true,
-    blurb: "Any team, any game — send the file on Telegram.",
+    blurb: "Any team, any game — a logo or image, printed in a 12 × 12 mm area. Position and zoom your print on the collection page, then send the file on Telegram.",
     designs: []
   }
 ];
